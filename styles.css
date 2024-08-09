@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.page {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pagination-controls {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.pagination-controls span {
+    font-size: 2em;
+    margin: 0 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .page img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .page img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Desktop view */
+@media (min-width: 769px) {
+    .page img {
+        max-width: 100%;
+        height: auto;
+    }
+}
